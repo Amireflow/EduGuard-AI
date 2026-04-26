@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Moteur Prédictif IA - EduGuard AI</title>
+  <meta name="description" content="Détails du module Moteur Prédictif IA d'EduGuard AI - Détection précoce du décrochage scolaire par intelligence artificielle">
+  <meta name="keywords" content="machine learning, prédiction, décrochage scolaire, IA éducation, XGBoost, Random Forest">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: iLanding
+  * Template URL: https://bootstrapmade.com/ilanding-bootstrap-landing-page-template/
+  * Updated: Nov 12 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body class="service-details-page">
+
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="header-container container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="assets/img/logo.png" alt=""> -->
+        <h1 class="sitename">EduGuard AI</h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html#hero">Accueil</a></li>
+          <li><a href="index.html#about">Mission</a></li>
+          <li><a href="index.html#features">Fonctionnalités</a></li>
+          <li><a href="index.html#services">Modules</a></li>
+          <li><a href="index.html#pricing">Tarifs</a></li>
+          <li class="dropdown"><a href="#"><span>Ressources</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="#">Documentation</a></li>
+              <li><a href="#">Études de cas</a></li>
+              <li><a href="#">Webinaires</a></li>
+              <li><a href="#">Blog</a></li>
+            </ul>
+          </li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+      <a class="btn-getstarted" href="index.html#about">Découvrir</a>
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Page Title -->
+    <div class="page-title light-background">
+      <div class="container">
+        <h1>Moteur Prédictif IA</h1>
+        <nav class="breadcrumbs">
+          <ol>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="index.html#services">Modules</a></li>
+            <li class="current">Moteur Prédictif IA</li>
+          </ol>
+        </nav>
+      </div>
+    </div><!-- End Page Title -->
+
+    <!-- Service Details Section -->
+    <section id="service-details" class="service-details section">
+
+      <div class="container">
+
+        <div class="row gy-5">
+
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+
+            <div class="service-box">
+              <h4>Nos Modules</h4>
+              <div class="services-list">
+                <a href="service-details.html" class="active"><i class="bi bi-arrow-right-circle"></i><span>Moteur Prédictif IA</span></a>
+                <a href="#"><i class="bi bi-arrow-right-circle"></i><span>Surveillance & Collecte</span></a>
+                <a href="#"><i class="bi bi-arrow-right-circle"></i><span>Gestion des Alertes</span></a>
+                <a href="#"><i class="bi bi-arrow-right-circle"></i><span>Rapports & Analytics</span></a>
+                <a href="#"><i class="bi bi-arrow-right-circle"></i><span>Tableau de Bord</span></a>
+              </div>
+            </div><!-- End Services List -->
+
+            <div class="service-box">
+              <h4>Téléchargements</h4>
+              <div class="download-catalog">
+                <a href="#"><i class="bi bi-filetype-pdf"></i><span>Fiche Technique IA (PDF)</span></a>
+                <a href="#"><i class="bi bi-file-earmark-word"></i><span>Rapport Performance (DOC)</span></a>
+              </div>
+            </div><!-- End Services List -->
+
+            <div class="help-box d-flex flex-column justify-content-center align-items-center">
+              <i class="bi bi-headset help-icon"></i>
+              <h4>Besoin d'aide ?</h4>
+              <p class="d-flex align-items-center mt-2 mb-0"><i class="bi bi-telephone me-2"></i> <span>+33 1 23 45 67 89</span></p>
+              <p class="d-flex align-items-center mt-1 mb-0"><i class="bi bi-envelope me-2"></i> <a href="mailto:support@eduguard-ai.fr">support@eduguard-ai.fr</a></p>
+            </div>
+
+          </div>
+
+          <div class="col-lg-8 ps-lg-5" data-aos="fade-up" data-aos-delay="200">
+            <img src="assets/img/services.jpg" alt="Moteur Prédictif IA EduGuard" class="img-fluid services-img">
+            <h3>L'Intelligence Artificielle au Cœur de la Détection Précoce du Décrochage Scolaire</h3>
+            <p>
+              Le Moteur Prédictif IA d'EduGuard est le cerveau analytique de notre plateforme. Il traite quotidiennement les données de milliers d'apprenants pour identifier, avec une précision de 98%, ceux présentant un risque de décrochage bien avant que les signes ne deviennent visibles pour les équipes éducatives traditionnelles.
+            </p>
+            <ul>
+              <li><i class="bi bi-check-circle"></i> <span><strong>Algorithmes de classification supervisée</strong> : Random Forest, XGBoost et réseaux de neurones entraînés sur des profils historiques de décrochage</span></li>
+              <li><i class="bi bi-check-circle"></i> <span><strong>Score de risque personnalisé</strong> : mis à jour quotidiennement pour chaque apprenant, de 0 (risque nul) à 100 (risque critique)</span></li>
+              <li><i class="bi bi-check-circle"></i> <span><strong>IA explicable (XAI)</strong> : chaque alerte est accompagnée des facteurs clés qui ont déclenché l'évaluation (baisse de notes, absences, désengagement numérique...)</span></li>
+            </ul>
+            <p>
+              Notre approche repose sur l'analyse de <strong>plus de 40 indicateurs</strong> regroupés en quatre familles : académiques (notes, moyennes, progression par matière), d'assiduité (absences, retards, manquements), d'engagement social (participation en classe, interactions avec les pairs) et d'activité numérique (connexions ENT, temps de travail en ligne, participation aux forums).
+            </p>
+            <p>
+              Le modèle s'améliore continuellement grâce à un <strong>processus d'apprentissage par renforcement</strong> : lorsqu'une équipe éducative intervient suite à une alerte et que l'apprenant réussit à surmonter ses difficultés, ce retour d'expérience est intégré au modèle pour affiner ses prédictions futures. Cette boucle de rétroaction garantit que le système devient plus précis et plus pertinent au fil du temps, en s'adaptant aux spécificités de chaque établissement et de chaque contexte pédagogique.
+            </p>
+            <p>
+              Conformément à nos engagements éthiques et réglementaires, le moteur prédictif est conçu selon les principes de <strong>l'IA responsable</strong> : transparence des algorithmes, absence de biais discriminatoires (vérifiés par des audits réguliers), et respect strict du RGPD. Les données sont pseudonymisées dès la collecte, et chaque apprenant conserve le contrôle de ses données personnelles.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /Service Details Section -->
+
+  </main>
+
+  <footer id="footer" class="footer">
+
+    <div class="container footer-top">
+      <div class="row gy-4">
+        <div class="col-lg-4 col-md-6 footer-about">
+          <a href="index.html" class="logo d-flex align-items-center">
+            <span class="sitename">EduGuard AI</span>
+          </a>
+          <div class="footer-contact pt-3">
+            <p>Campus Innovation IA</p>
+            <p>75013 Paris, France</p>
+            <p class="mt-3"><strong>Téléphone :</strong> <span>+33 1 23 45 67 89</span></p>
+            <p><strong>Email :</strong> <span>contact@eduguard-ai.fr</span></p>
+          </div>
+          <div class="social-links d-flex mt-4">
+            <a href=""><i class="bi bi-twitter-x"></i></a>
+            <a href=""><i class="bi bi-facebook"></i></a>
+            <a href=""><i class="bi bi-instagram"></i></a>
+            <a href=""><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="index.html#hero">Accueil</a></li>
+            <li><a href="index.html#about">Mission</a></li>
+            <li><a href="index.html#features">Fonctionnalités</a></li>
+            <li><a href="index.html#services">Modules</a></li>
+            <li><a href="index.html#pricing">Tarifs</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Ressources</h4>
+          <ul>
+            <li><a href="#">Documentation</a></li>
+            <li><a href="#">Études de cas</a></li>
+            <li><a href="#">Webinaires</a></li>
+            <li><a href="#">Blog IA & Éducation</a></li>
+            <li><a href="#">RGPD & Sécurité</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Légal</h4>
+          <ul>
+            <li><a href="#">Mentions légales</a></li>
+            <li><a href="starter-page.html">Politique de confidentialité</a></li>
+            <li><a href="#">Conditions d'utilisation</a></li>
+            <li><a href="#">Politique RGPD</a></li>
+            <li><a href="#">Certifications</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>À Propos</h4>
+          <ul>
+            <li><a href="#">L'équipe</a></li>
+            <li><a href="#">Carrières</a></li>
+            <li><a href="#">Partenaires</a></li>
+            <li><a href="#">Presse</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container copyright text-center mt-4">
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">EduGuard AI</strong> <span>Tous Droits Réservés</span></p>
+      <div class="credits">
+        Développé dans le cadre de l'Atelier Créatif - Projet IA & Éducation
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
